@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - SINERGIAS</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="../assets/logo.png" alt="Logo SINERGIAS">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 Inicio</a></li>
+            <li><a href="destinos.html">🌱 Destinos Sostenibles</a></li>
+            <li><a href="ecosistemas.html">🎓 Ecosistemas Formativos</a></li>
+            <li><a href="participantes.html">👥 Instituciones Participantes</a></li>
+            <li><a href="avances.html">📈 Avances</a></li>
+            <li><a href="mapa.html">🗺️ Mapa</a></li>
+            <li><a href="privada.html">🔒 Acceso Privado</a></li>
+            <li><a href="contacto.html">📞 Contacto</a></li>
+            <li><a href="recursos.html">📚 Recursos</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main class="container">
+
+    <h1>Contacto para Instituciones</h1>
+
+    <div class="form-card">
+
+        <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre institución"
+        >
+
+        <input
+            type="email"
+            id="correo"
+            placeholder="Correo electrónico"
+        >
+
+        <input
+            type="text"
+            id="mensaje"
+            placeholder="Mensaje"
+        >
+
+        <button id="btnEnviar">
+            Enviar Solicitud
+        </button>
+
+    </div>
+
+    <h2>Registro de solicitudes</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Institución</th>
+                <th>Correo</th>
+                <th>Mensaje</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaSolicitudes">
+
+        </tbody>
+
+    </table>
+
+</main>
+
+<footer>
+    <p>© 2026 SINERGIAS</p>
+</footer>
+
+<script src="../js/contacto.js"></script>
+
+</body>
+
+</html>
