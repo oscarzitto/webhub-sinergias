@@ -410,3 +410,17 @@ tr:hover {
     background:#0f766e;
     border-radius:10px;
 }
+
+body {
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.7)
+        ),
+        url("https://sinergias.cl/wp-content/uploads/2022/10/slide-show-principal.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
