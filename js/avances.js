@@ -18,6 +18,9 @@ const procesos = [
 
 const tabla = document.getElementById("tablaAvances");
 
+const barras =
+    document.getElementById("barrasAvance");
+
 let suma = 0;
 let certificadas = 0;
 
@@ -25,7 +28,7 @@ procesos.forEach(proceso => {
 
     suma += proceso.avance;
 
-    if(proceso.avance === 100){
+    if (proceso.avance === 100) {
         certificadas++;
     }
 
@@ -36,6 +39,25 @@ procesos.forEach(proceso => {
             <td>${proceso.avance}%</td>
         </tr>
     `;
+
+    barras.innerHTML += `
+<div class="avance-item">
+
+    <div class="avance-header">
+        <span>${proceso.institucion}</span>
+        <strong>${proceso.avance}%</strong>
+    </div>
+
+    <div class="barra-fondo">
+        <div
+            class="barra-progreso"
+            style="width:${proceso.avance}%"
+        ></div>
+    </div>
+
+</div>
+`;
+
 });
 
 document.getElementById("totalInstituciones").textContent =
