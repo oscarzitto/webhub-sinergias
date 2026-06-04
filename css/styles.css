@@ -53,6 +53,11 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
+.home-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .hero {
     text-align: center;
     padding: 80px 20px;
@@ -97,16 +102,16 @@ button:hover {
 
 .initiatives {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    padding: 40px;
+    padding: 40px 20px;
 }
 
 .stats {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 40px;
+    padding: 40px 20px;
 }
 
 .integration {
-    padding: 40px;
+    padding: 40px 20px;
 }
 
 .integration h2 {
@@ -116,6 +121,12 @@ button:hover {
 
 .integration-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .card,
